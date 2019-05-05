@@ -1,0 +1,29 @@
+h2{
+    font-family: 'Special Elite', cursive;
+    font-size: 45px;
+    margin-bottom: 4%;
+    
+}
+.badge{
+    margin-left: 20px;
+}
+.btn{
+    border-radius: 60px;
+}
+.jumbotron{
+    padding: 1%;
+    margin-top: 15px;
+    
+}
+.diff {
+    font-family: 'Special Elite', cursive;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+h5{
+    font-family: 'Special Elite', cursive;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.mr{
+    margin:1.5%
+}

@@ -1,0 +1,65 @@
+<div class="container-fluid">
+  <div class="jumbotron text-center blue-grey lighten-5">
+    <h2>
+      Are you aware that You can Search your Github informaition Quite Easily?
+    </h2>
+  </div> 
+  
+  
+  <div>
+      <form>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-9">
+              <input type="text" class="form-control" placeholder="Search Github username" [(ngModel)]="username" name="username">
+            </div>
+            <div class="col-sm-3">
+              <button class="btn btn-info" (click)="findUser()">Search</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>      
+  <div class="row">
+    <div class="col-md-5">
+      <img src="{{user.avatar_url}}" class="rounded-circle z-depth-2" data-holder-rendered="true" alt="Profile Picture" >
+        
+    </div>
+    <div class="col-md-7">
+    <div class="card-body">
+    
+      <div class="row">
+        <p>
+        <span class="badge badge-pill badge-secondary">Public Repositories: {{user.public_repos}}</span>
+        <span class="badge badge-pill badge-success">Following: {{user.following}}</span>
+        <span class="badge badge-pill badge-default">Followers: {{user.followers}}</span>
+        <!-- <span class="badge badge-pill badge-primary">Followers</span> -->
+      </p>
+    </div>
+      <p><a href="{{user.html_url}}" target="_blank" class="btn btn-danger btn-rounded">View Profile on Github</a></p>
+     
+        <h5>  
+            Username: <strong>{{user.login}}</strong>
+        </h5>
+           <h5> Bio Data: <strong>{{user.bio|upperCase}}</strong></h5>
+           <h5 appTextColourChange>  Member Since: <strong>{{user.created_at}}</strong></h5>
+          
+    </div>
+    <div>
+      <div class="card-heading">
+        <h4 class="card-title text-center diff" >Public Repositories for <strong>{{user.login}}</strong></h4>
+      </div>
+      
+      <div class="card-body" > 
+          
+        <div class="card card-secondary border border-info mr" *ngFor='let rep of repo'>        
+        <p class="clearfix ">Repo Name: <strong>{{rep.name}}</strong><a href="{{rep.html_url}}" target="_blank" class="btn btn-danger float-right">View Repository on Github</a></p>
+        
+        <p>{{rep.description}}</p>
+        </div>
+    
+      </div>
+    </div>
+</div>
+</div>
+</div>
