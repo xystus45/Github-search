@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { PageErrorComponent } from './page-error/page-error.component';
 import { ProfileComponent } from './profile/profile.component';
+import { UpperCasePipe } from './upper-case.pipe';
+import { TextColorChangeDirective } from '../text-color-change.directive';
+import { ProfileRequestComponent } from './profile-request/profile-request.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     PageErrorComponent,
-    ProfileComponent
+    ProfileComponent,
+    UpperCasePipe,
+    TextColorChangeDirective,
+    ProfileRequestComponent
   ],
   imports: [
     BrowserModule,

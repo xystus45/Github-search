@@ -13,10 +13,10 @@ export class ProfileService {
   public newUsername:string;
 
   constructor(private http:HttpClient) {
-    // this.user.login = "Antavio";
+    
     this.user = new User("","","",0,0,"","","");
     this.repos= [];
-    this.username = "Antavio";
+    this.username = "xystus45";
     this.newUsername='';
     
    } 
