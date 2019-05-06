@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ProfileService } from '../profile-request/profile.service';
+import { ProfileService } from '../profile-request/profile.service.service';
 import { User } from '../user';
 import { Repository } from '../repository';
 
 @Component({
   selector: 'app-profile',
-  templateUrl: '../profile.component.html',
+  templateUrl: './profile.component.html',
   providers:[ProfileService],
   styleUrls: ['./profile.component.css']
 })

@@ -14,7 +14,7 @@
               <input type="text" class="form-control" placeholder="Search Github username" [(ngModel)]="username" name="username">
             </div>
             <div class="col-sm-3">
-              <button class="btn btn-info" (click)="findUser()">Search</button>
+              <button class="btn btn-info" (keyup)="findUser()">Search</button>
             </div>
           </div>
         </div>

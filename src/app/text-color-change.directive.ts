@@ -1,8 +1,12 @@
-import { TextColorChangeDirective } from '../text-color-change.directive';
+import { Directive, ElementRef } from '@angular/core';
 
-describe('TextColorChangeDirective', () => {
-  it('should create an instance', () => {
-    const directive = new TextColorChangeDirective();
-    expect(directive).toBeTruthy();
-  });
-});
+@Directive({
+  selector: '[appTextColorChange]'
+})
+export class TextColorChangeDirective {
+
+  constructor(private el: ElementRef) {
+    this.el.nativeElement.style.color = '#1071ED';
+   }
+
+}
