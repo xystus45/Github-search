@@ -14,9 +14,9 @@ import { reject } from 'q';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  user:User[];
+  user:any=[];
   
-  repo:Repository[];
+  repo:any=[];
   username:string=''
   
   constructor(private hhtp:HttpClient,private profService:ProfileService) { 
