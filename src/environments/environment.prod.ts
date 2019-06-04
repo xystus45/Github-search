@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  apiUrl:'api.github.com/users',
-  access_token:'79e7ccd79638c3bca3c2f6e45f2fe498ba824050'
+  apiUrl:'api.github.com/users/',
+  access_token:'?access_token=8b95c9c8bdfb194bb5efa4582e40c05c6fe11377'
 };

@@ -20,7 +20,7 @@ import { TextColorChangeDirective } from './text-color-change.directive';
     AboutComponent,
     PageErrorComponent,
     UpperCasePipe,
-    TextColorChangeDirective
+    TextColorChangeDirective,
   ],
   imports: [
     BrowserModule,

@@ -1,24 +1,24 @@
 <div class="container-fluid">
   <div class="jumbotron text-center blue-grey lighten-5">
     <h2>
-      Are you aware that You can Search your Github informaition Quite Easily?
+      Did You Know You can Search your Github info Easily?
     </h2>
   </div> 
   
   
   <div>
-      <form>
+    
         <div class="form-group">
           <div class="row">
             <div class="col-md-9">
               <input type="text" class="form-control" placeholder="Search Github username" [(ngModel)]="username" name="username">
             </div>
             <div class="col-sm-3">
-              <button class="btn btn-info" (keyup)="findUser()">Search</button>
+              <button class="btn btn-info" (click)=getRepo() (click)=getUser()>Search</button>
             </div>
           </div>
         </div>
-      </form>
+    
     </div>      
   <div class="row">
     <div class="col-md-5">
@@ -42,7 +42,7 @@
             Username: <strong>{{user.login}}</strong>
         </h5>
            <h5> Bio Data: <strong>{{user.bio|upperCase}}</strong></h5>
-           <h5 appTextColorChange>  Member Since: <strong>{{user.created_at}}</strong></h5>
+           <h5 appTextColourChange>  Member Since: <strong>{{user.created_at}}</strong></h5>
           
     </div>
     <div>
@@ -60,6 +60,7 @@
     
       </div>
     </div>
+    <h1>{{repo}}</h1>
 </div>
 </div>
 </div>
